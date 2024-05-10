@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: coindesk-api
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:coindesk
+    username: sa
+    password: 123456
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+springdoc:
+  packages-to-scan: com.tnl.coindeskapi
+  swagger-ui:
+    path: /swagger-ui.html
+    tryItOutEnabled: true
+    operationsSorter: method
+    tagsSorter: alpha
+    filter: true

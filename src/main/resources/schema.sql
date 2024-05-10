@@ -1,0 +1,5 @@
+CREATE TABLE currency (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    code VARCHAR(50) NOT NULL,
+    name VARCHAR(100) NOT NULL
+);
