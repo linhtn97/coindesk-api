@@ -1,8 +1,6 @@
 package com.tnl.coindeskapi.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,6 +16,7 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 public class Currency {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private String code;
     private String name;
