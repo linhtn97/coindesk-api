@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Value;
 import lombok.extern.jackson.Jacksonized;
-import org.springframework.data.annotation.ReadOnlyProperty;
 
 import java.sql.Timestamp;
 import java.util.UUID;
