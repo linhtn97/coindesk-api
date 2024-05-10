@@ -24,7 +24,7 @@ public class CurrencyController {
         return ResponseEntity.ok(currencyService.update(req));
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     void update(@PathVariable int id) {
         currencyService.deleteById(id);
     }
